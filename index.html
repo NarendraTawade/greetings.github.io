@@ -1,108 +1,24 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    /* Style the birthday message */
-    #message {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 48px;
-      font-family: sans-serif;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    /* Style the birthday message text */
-    #message span {
-      display: inline-block;
-      position: relative;
-      animation: text-animation 3s linear infinite;
-    }
-
-    /* Add the animation */
-    @keyframes text-animation {
-      0% {
-        transform: translateY(0);
-      }
-      25% {
-        transform: translateY(-100px);
-      }
-      50% {
-        transform: translateY(0);
-      }
-      75% {
-        transform: translateY(100px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    /* Style the birthday message text colors */
-    #message span:nth-of-type(1) {
-      color: #dc3545;
-    }
-    #message span:nth-of-type(2) {
-      color: #ffc107;
-    }
-    #message span:nth-of-type(3) {
-      color: #28a745;
-    }
-
-    /* Style the fireworks */
-    .firework {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 2px;
-      height: 2px;
-      border-radius: 50%;
-      background-color: #ffc107;
-      animation: firework-animation 1s linear infinite;
-    }
-
-    /* Add the animation */
-    @keyframes firework-animation {
-      0% {
-        width: 2px;
-        height: 2px;
-        top: 50%;
-        left: 50%;
-        opacity: 1;
-      }
-      100% {
-        width: 200px;
-        height: 200px;
-        top: -150%;
-        left: -150%;
-        opacity: 0;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="greet.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <title>Happy Birthday card || Learningrobo</title>
 </head>
 <body>
-  <!-- Display the birthday message -->
-  <div id="message">
-    <span>H</span>
-    <span>a</span>
-    <span>p</span>
-    <span>p</span>
-    <span>y</span>
-    <span> </span>
-    <span>B</span>
-    <span>i</span>
-    <span>r</span>
-    <span>t</span>
-    <span>h</span>
-    <span>d</span>
-    <span>a</span>
-    <span>y</span>
-    <span>!</span>
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2020/10/06/21/54/cake-5633461__480.png" alt="birthday" class="birthday">
+    <div class="text">
+      <h1>Happy Birthday!</h1>
+      <p>Have a great future..!</p>
+      <p>- LearningRobo</p>
+      <div class="credit">Made with <span style="color:tomato">❤</span> by <a  href="https://www.learningrobo.com/">Learning Robo</a></div>
+    </div>
+    <div class="space"></div>
   </div>
-
-  <!-- Display the fireworks -->
-  <div class="firework"></div>
-  <div class="fire
+</body>
+</html>
